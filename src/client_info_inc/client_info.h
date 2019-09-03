@@ -6,7 +6,7 @@
 
 #include<sys/types.h>	// pid_t
 
-#define CLIENT_DATA_LEN		5
+#define CLIENT_DATA_LEN		20
 #define CLIENT_TOPIC_LEN 	20
 #define IP_ADDR_LEN		15
 
