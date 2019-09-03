@@ -96,16 +96,16 @@ void client_read_and_pub(int pfd, const char *topic, struct mosquitto *mosq_sens
 		if(loop != MOSQ_ERR_SUCCESS){
 
 			if(loop == MOSQ_ERR_CONN_LOST){
-				fprintf(stderr,"error: connection to broker was lost\n");
+				fprintf(stderr,"error: connection to broker was lost %s\n", topic);
 			}
 			else if(loop == MOSQ_ERR_NO_CONN){
-				fprintf(stderr, "error: no connection to broker\n");
+				fprintf(stderr, "error: no connection to broker %s\n", topic);
 			}
 			else if(loop == MOSQ_ERR_PROTOCOL){
-				fprintf(stderr, "error: protocol error\n");
+				fprintf(stderr, "error: protocol error %s\n", topic);
 			}
 			else{
-				fprintf(stderr, "error: system call error\n");
+				fprintf(stderr, "error: system call error %s\n", topic);
 			}
 			break;
 		}
