@@ -1,0 +1,7 @@
+
+shell session started 2019-09-03 14:14:28
+client 0(9121) created
+client 0(9121) connected to 127.0.0.1
+client 0(9121) subscribed to topic r/t
+client 0(9121) disconnected
+shell session ended 2019-09-03 14:14:43
